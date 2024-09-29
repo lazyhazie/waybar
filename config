@@ -1,0 +1,34 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 50, // Waybar height (to be removed for auto height)
+    // "width": 1280, // Waybar width
+    //"spacing": 10, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "clock",
+        "tray",
+    ],
+    // Modules configuration
+    "hyprland/workspaces": {
+         "disable-scroll": false,
+         "all-outputs": true,
+         "warp-on-scroll": false,
+         },
+     
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+
+    "clock": {
+    	"interval": 60,
+	"format": " {:%A %d-%m-%Y %H:%M}",
+    },
+}
